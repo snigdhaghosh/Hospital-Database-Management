@@ -1,0 +1,120 @@
+:root{
+    --section-space: 6rem;
+    --header-font-size: 1.3rem;
+    --content-font-size:1.15rem;
+
+    --light-green: rgb(193, 231, 228);
+    --white:aliceblue;
+    --background_black:  rgba(0, 0, 0, 0.548);
+    --linear_grad: linear-gradient(360deg, black 15%, rgba(0, 0, 0, 0) 100%);
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+    /* margin: 0; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:#1e1f20;
+    /* color: white; */
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+   
+    background: rgb(0, 0, 0) url("images/blue2.jpeg") no-repeat top center;
+    background-size: cover;
+    opacity: 1.0;
+}
+
+#home-name{
+    line-height: 1;
+    margin-top: 10;
+    margin-bottom: 0;
+    color:azure;
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 1px 1px 3px black;
+}
+
+body::before {
+    display: block;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(36, 35, 35);
+    opacity: .2;
+}
+
+body::after {
+    display: block;
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, black 25%, rgba(0, 0, 0, 0) 100%);
+    opacity: .5;
+}
+.center-box {
+    width: 300px; /* Adjust the width as needed */
+    padding: 20px;
+    border-radius: 10px;
+    /* border: 1px solid #ccc; */
+    text-align: center;
+    background-color: rgba(21, 24, 24, 0.556); /* Background color for the box */
+}
+select {
+    width: 150px; /* Set a specific width */
+    padding-top: 10px; /* Adjust top padding */
+    padding-bottom: 10px; /* Adjust bottom padding */
+    border-radius: 10px;
+    /* line-height: 1.5; */
+}
+
+option {
+    text-align: center;
+}
+
+input {
+    /* width: 100px; Set a specific width */
+    padding-top: 5px; /* Adjust top padding */
+    padding-bottom: 5px; /*Adjust bottom padding */
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+/* 
+.submits {
+    width: 100px; /* Set a specific width */
+    /* padding-top: 5px; Adjust top padding */
+    /* padding-bottom: 5px; Adjust bottom padding */
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    /* border-radius: 10px; */
+    /* line-height: 1.5; */
+/* } */
+/* option {
+    text-align: center;
+} */
